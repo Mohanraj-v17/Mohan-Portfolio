@@ -31,17 +31,17 @@ const Section = ({
     );
 
     const alignmentClasses = {
-        left: "items-start text-left pl-10 md:pl-24",
+        left: "items-start text-left md:pl-24",
         center: "items-center text-center",
-        right: "items-end text-right pr-10 md:pr-24",
+        right: "items-end text-right md:pr-24",
     };
 
     return (
         <motion.div
             style={{ opacity, y }}
-            className={`absolute inset-0 h-screen flex flex-col justify-center pointer-events-none ${alignmentClasses[align]}`}
+            className={`absolute inset-0 h-screen flex flex-col justify-center pointer-events-none px-6 ${alignmentClasses[align]}`}
         >
-            <div className="w-full max-w-7xl mx-auto px-6 relative">
+            <div className="w-full max-w-7xl mx-auto relative">
                 {children}
             </div>
         </motion.div>
@@ -66,11 +66,11 @@ export default function Overlay() {
             <div className="sticky top-0 h-screen w-full overflow-hidden">
                 {/* Section 1: Hero */}
                 <Section progress={scrollYProgress} start={0} end={0.1} align="center">
-                    <h1 className="text-3xl md:text-[3vw] font-display font-bold tracking-[-0.04em] uppercase mb-8 leading-[0.8] scale-y-[1.05]">
+                    <h1 className="text-4xl sm:text-6xl md:text-[2.8vw] font-display font-bold tracking-[-0.04em] uppercase mb-8 leading-[0.8] scale-y-[1.05]">
                         Mohan Raj
                     </h1>
                     <div className="flex flex-col items-center gap-4">
-                        <p className="text-sm md:text-lg text-white/80 tracking-[0.3em] uppercase font-light">
+                        <p className="text-xs sm:text-sm md:text-lg text-white/80 tracking-[0.2em] sm:tracking-[0.3em] uppercase font-light">
                             Full Stack Developer
                         </p>
 
@@ -94,18 +94,18 @@ export default function Overlay() {
 
                 {/* Section 2: Expertise */}
                 <Section progress={scrollYProgress} start={0.25} end={0.4} align="left">
-                    <h2 className="text-2xl md:text-4xl font-bold tracking-tight max-w-3xl leading-[1.1]">
-                        I build <span className="text-white/20 italic font-serif">scalable</span> MERN applications with a focus on <span className="text-white/20 italic font-serif">clean architecture</span>.
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight max-w-4xl leading-[1.1]">
+                        I build scalable <span className="text-white/20 italic font-serif">MERN Web applications</span> with a focus on <span className="text-white/20 italic font-serif">clean architecture</span>.
                     </h2>
                 </Section>
 
                 {/* Section 3: Vision */}
                 <Section progress={scrollYProgress} start={0.5} end={0.65} align="right">
-                    <h2 className="text-2xl md:text-4xl font-bold tracking-tight max-w-3xl leading-[1.1] ml-auto">
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight max-w-4xl leading-[1.1] ml-auto">
                         Crafting <span className="italic font-serif text-white/20">seamless</span> digital experiences that prioritize <span className="text-white">intuitive</span> user interaction.
                     </h2>
                     <div className="mt-8">
-                        <p className="text-[10px] md:text-xs text-white/40 tracking-[0.2em] uppercase font-medium max-w-md ml-auto leading-relaxed">
+                        <p className="text-[10px] sm:text-xs text-white/40 tracking-[0.2em] uppercase font-medium max-w-md ml-auto leading-relaxed">
                             Bridging the gap between complex backend logic and pixel-perfect frontends.
                         </p>
                     </div>
@@ -113,14 +113,15 @@ export default function Overlay() {
 
                 {/* Section 4: Final Call */}
                 <Section progress={scrollYProgress} start={0.75} end={0.9} align="center">
-                    <h2 className="text-3xl md:text-6xl font-black tracking-tighter uppercase leading-[0.85] mb-8">
+                    <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tighter uppercase leading-[0.85] mb-8">
                         From <span className="text-white/20 italic font-serif">Pixels</span> <br />to Production.
                     </h2>
-                    <p className="text-xs md:text-sm text-white/40 tracking-[0.15em] font-light max-w-2xl mx-auto leading-relaxed">
-                        Transforming bold ideas into high-impact <br />technical solutions.
+                    <p className="text-xs sm:text-sm md:text-base text-white/40 tracking-[0.15em] font-light max-w-2xl mx-auto leading-relaxed">
+                        Transforming bold ideas into high-impact <br className="hidden sm:block" />technical solutions.
                     </p>
                 </Section>
             </div>
         </div>
     );
 }
+

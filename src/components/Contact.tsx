@@ -65,29 +65,29 @@ export default function Contact() {
     };
 
     return (
-        <section className="relative py-32 px-6 overflow-hidden bg-background text-white">
+        <section className="relative py-20 md:py-32 px-6 overflow-hidden bg-background text-white">
             <div className="absolute top-0 left-0 w-full h-full pointer-events-none -z-10">
                 <div className="absolute top-1/4 -left-20 w-[600px] h-[600px] bg-white/[0.02] rounded-full blur-[120px]" />
                 <div className="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background" />
             </div>
 
             <div id="contact-view" className="container mx-auto max-w-6xl relative z-10">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
                     <div className="flex flex-col justify-center">
                         <motion.div
                             initial={{ opacity: 0, x: -20 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
-                            className="mb-12"
+                            className="mb-8 md:mb-12"
                         >
-                            <h2 className="text-6xl md:text-8xl font-bold tracking-tighter mb-8 bg-gradient-to-b from-white to-white/40 bg-clip-text text-transparent">
+                            <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tighter mb-6 md:mb-8 bg-gradient-to-b from-white to-white/40 bg-clip-text text-transparent">
                                 Get in <br />
                                 <span className="text-white/20 italic font-light">Touch</span>
                             </h2>
-                            <p className="text-xl font-medium mb-8 text-white/80 tracking-tight">I'd like to hear from you!</p>
+                            <p className="text-lg md:text-xl font-medium mb-6 md:mb-8 text-white/80 tracking-tight">I'd like to hear from you!</p>
                         </motion.div>
 
-                        <div className="space-y-8">
+                        <div className="space-y-6 md:space-y-8">
                             {contactMethods.map((method) => (
                                 <a
                                     key={method.name}
@@ -107,10 +107,10 @@ export default function Contact() {
                         initial={{ opacity: 0, scale: 0.95 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
-                        className="bg-white/[0.02] backdrop-blur-3xl p-10 md:p-14 rounded-[2rem] border border-white/5 shadow-2xl"
+                        className="bg-white/[0.02] backdrop-blur-3xl p-8 sm:p-10 md:p-14 rounded-[1.5rem] md:rounded-[2rem] border border-white/5 shadow-2xl"
                     >
-                        <form className="space-y-8" onSubmit={handleSubmit}>
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <form className="space-y-6 md:space-y-8" onSubmit={handleSubmit}>
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">
                                 <div className="space-y-2">
                                     <label className="text-[10px] uppercase tracking-widest font-bold text-white/40">First Name</label>
                                     <input
@@ -151,14 +151,14 @@ export default function Contact() {
                                     required
                                     value={formData.message}
                                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                                    className="w-full bg-white/[0.03] border border-white/10 rounded-xl p-4 focus:border-white outline-none transition-colors resize-none text-white"
+                                    className="w-full bg-white/[0.03] border border-white/10 rounded-xl p-4 focus:border-white outline-none transition-colors resize-none text-white text-sm"
                                 />
                             </div>
 
                             <button
                                 type="submit"
                                 disabled={status === "loading" || status === "success"}
-                                className={`w-full md:w-auto px-12 py-4 rounded-xl font-bold text-[10px] uppercase tracking-widest transition-all transform hover:scale-[1.02] active:scale-95 shadow-xl flex items-center justify-center gap-2 group
+                                className={`w-full lg:w-auto px-12 py-4 rounded-xl font-bold text-[10px] uppercase tracking-widest transition-all transform hover:scale-[1.02] active:scale-95 shadow-xl flex items-center justify-center gap-2 group
                                     ${status === "success" ? "bg-green-500 text-white" : "bg-white text-black hover:bg-zinc-200"}`}
                             >
                                 {status === "idle" && (
@@ -175,8 +175,8 @@ export default function Contact() {
                 </div>
             </div>
 
-            <div className="mt-20 text-center">
-                <p className="text-white/20 text-[9px] uppercase tracking-[0.4em] font-medium px-4">
+            <div className="mt-16 md:mt-20 text-center">
+                <p className="text-white/20 text-[9px] uppercase tracking-[0.4em] font-medium px-4 leading-relaxed">
                     Mohan Raj • Available for new opportunities • Hosur, TN
                 </p>
             </div>

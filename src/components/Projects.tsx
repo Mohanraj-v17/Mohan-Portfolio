@@ -10,7 +10,7 @@ const PROJECTS = [
         category: "E-Commerce Platform",
         description: "Full-stack application supporting user authentication, secure REST APIs, and optimized database queries.",
         tech: ["React.js", "Node.js", "Express.js", "MongoDB"],
-        link: "https://github.com/Mohanraj-v17/Majesty",
+        link: "https://majesty-v17.vercel.app/",
         image: "https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&q=80&w=1000",
     },
     {
@@ -18,7 +18,7 @@ const PROJECTS = [
         category: "Movie Finder",
         description: "Dynamic movie search platform integrating third-party APIs with real-time functionality and responsive UI.",
         tech: ["React.js", "REST APIs", "Tailwind CSS"],
-        link: "https://github.com/Mohanraj-v17/Thiraix",
+        link: "https://thiraix.vercel.app/",
         image: "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&q=80&w=1000",
     },
     {
@@ -26,7 +26,7 @@ const PROJECTS = [
         category: "Feedback System",
         description: "A high-performance Single Page Application designed for managing and visualizing user feedback with a focus on real-time interactivity.",
         tech: ["React.js", "Vite", "Bootstrap"],
-        link: "https://github.com/Mohanraj-v17/Review-app-SPA-",
+        link: "https://review-spa.vercel.app/",
         image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1000",
     },
     {
@@ -34,7 +34,7 @@ const PROJECTS = [
         category: "Finance Management",
         description: "A comprehensive tool for tracking personal expenses and incomes, featuring a clean dashboard and data visualization.",
         tech: ["Javascript", "HTML", "CSS"],
-        link: "https://github.com/Mohanraj-v17/MoneyTracker",
+        link: "https://money-tracker-sage-beta.vercel.app/",
         image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=1000",
     },
     {
@@ -42,7 +42,7 @@ const PROJECTS = [
         category: "Ordering System",
         description: "An intuitive platform for browsing and ordering books, with a focus on seamless user experience and order management.",
         tech: ["Javascript", "HTML", "CSS"],
-        link: "https://github.com/Mohanraj-v17/Book-order",
+        link: "https://book-order-iota.vercel.app/",
         image: "https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&q=80&w=1000",
     },
     {
@@ -50,7 +50,7 @@ const PROJECTS = [
         category: "UI/UX Clone",
         description: "A pixel-perfect reconstruction of the Facebook signup interface, demonstrating expertise in responsive layout and form design.",
         tech: ["HTML5", "CSS3", "Responsive Design"],
-        link: "https://github.com/Mohanraj-v17/Facebook-signup-clone",
+        link: "https://facebook-signup-clone-blush.vercel.app/",
         image: "https://images.unsplash.com/photo-1627843563095-f6e94676cfe0?auto=format&fit=crop&q=80&w=1000",
     },
 ];

@@ -10,7 +10,7 @@ const PROJECTS = [
         category: "E-Commerce Platform",
         description: "Full-stack application supporting user authentication, secure REST APIs, and optimized database queries.",
         tech: ["React.js", "Node.js", "Express.js", "MongoDB"],
-        link: "https://majesty-v17.vercel.app/",
+        link: "https://majesty-beta.vercel.app/",
         image: "https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&q=80&w=1000",
     },
     {

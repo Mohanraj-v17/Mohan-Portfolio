@@ -22,7 +22,7 @@ export default function ResumePage() {
                         Original Document
                     </span>
                     <a
-                        href="/Mohan.CV.pdf"
+                        href="/MohanCV.pdf"
                         download="Mohan_Raj_CV.pdf"
                         className="flex items-center gap-2 bg-white text-black px-4 md:px-5 py-2 rounded-lg hover:bg-zinc-200 transition-all shadow-xl font-bold text-[10px] md:text-xs uppercase tracking-widest"
                     >
@@ -34,10 +34,10 @@ export default function ResumePage() {
             </nav>
 
             {/* Resume PDF Viewer - Immersive Container */}
-            <div className="flex-grow pt-20 pb-6 px- mobile:px-4 md:px-8 w-full max-w-[1300px] mx-auto h-[calc(100vh-20px)] overflow-hidden flex flex-col">
+            <div className="flex-grow pt-20 pb-6 px-4 md:px-8 w-full max-w-[1300px] mx-auto h-[calc(100vh-20px)] overflow-hidden flex flex-col">
                 <div className="flex-grow w-full bg-[#1c1c1c] rounded-xl md:rounded-2xl border border-white/10 overflow-hidden shadow-2xl relative">
                     <iframe
-                        src="/Mohan.CV.pdf#toolbar=0&navpanes=0&scrollbar=0&view=Fit"
+                        src="/MohanCV.pdf#toolbar=0&navpanes=0&scrollbar=0&view=Fit"
                         className="w-full h-full border-none block"
                         title="Mohan Raj V Resume"
                     />

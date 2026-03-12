@@ -22,7 +22,7 @@ export default function ResumePage() {
                         Original Document
                     </span>
                     <a
-                        href="/MohanCV.pdf"
+                        href="/Mohan-Resume.pdf"
                         download="Mohan_Raj_CV.pdf"
                         className="flex items-center gap-2 bg-white text-black px-4 md:px-5 py-2 rounded-lg hover:bg-zinc-200 transition-all shadow-xl font-bold text-[10px] md:text-xs uppercase tracking-widest"
                     >
